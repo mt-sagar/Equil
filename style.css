@@ -1,0 +1,42 @@
+/* Basic reset */
+*{box-sizing:border-box;margin:0;padding:0;font-family:Inter, system-ui, Arial, sans-serif}
+body{background:#0b0b0d;color:#eaeaea}
+
+.nav{display:flex;justify-content:space-between;align-items:center;padding:14px 28px;background:transparent;position:sticky;top:0;z-index:10}
+.logo{display:flex;align-items:center;gap:12px}
+.logo-mark{font-weight:900;color:#8b5cf6;font-size:28px}
+.logo-text{font-weight:700;letter-spacing:2px}
+.links a{color:rgba(255,255,255,0.75);margin-right:12px;text-decoration:none}
+
+.btn{padding:8px 12px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);background:transparent;color:#fff;cursor:pointer}
+.btn.small{padding:6px 10px;font-size:14px}
+.btn.primary{background:linear-gradient(90deg,#6d28d9,#7c3aed);border:none}
+
+.hero{padding:48px 0;border-bottom:1px solid rgba(255,255,255,0.03)}
+.hero-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.hero-text h1{font-size:34px;margin-bottom:10px}
+.hero-text .sub{color:rgba(255,255,255,0.7);margin-bottom:18px}
+.wallet-check{display:flex;gap:10px}
+.wallet-check input{padding:12px 10px;border-radius:8px;border:1px solid rgba(255,255,255,0.06);width:360px;background:rgba(255,255,255,0.02);color:#fff}
+
+.hero-visual{width:360px;height:200px}
+
+/* modal */
+.hidden{display:none}
+.modal{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(0,0,0,0.6)}
+.modal-card{background:#0f1724;padding:22px;border-radius:12px;min-width:320px;color:#fff}
+.modal-close{position:absolute;right:18px;top:18px;background:transparent;border:none;color:#fff;font-size:18px}
+
+.tasks{padding:36px 0}
+.task-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px;max-width:1100px;margin:12px auto}
+.task-card{background:#0f1724;padding:16px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
+.task-card h4{margin-bottom:6px}
+.task-card p{color:rgba(255,255,255,0.7);margin-bottom:12px}
+.task-btn{padding:8px 12px;border-radius:8px;border:none;background:#6b7280;color:#fff}
+
+.footer{padding:28px;border-top:1px solid rgba(255,255,255,0.03);margin-top:26px}
+.container{display:flex;gap:30px;max-width:1100px;margin:0 auto;justify-content:space-between}
+.tiny{text-align:center;opacity:0.6;margin-top:14px}
+
+/* responsive */
+@media(max-width:800px){.hero-inner{flex-direction:column}.wallet-check input{width:100%}}
