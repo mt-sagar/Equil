@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Equil — Airdrop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-left">
+      <div class="logo">
+        <div class="logo-mark">||</div>
+        <div class="logo-text">EQUIL</div>
+      </div>
+      <nav class="links">
+        <a href="#whitepaper">Whitepaper</a>
+        <a href="#airdrop">Airdrop</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+
+    <div class="nav-right">
+      <button id="signinBtn" class="btn small">Sign in</button>
+      <button id="connectBtn" class="btn primary">Connect Wallet</button>
+    </div>
+  </header>
+
+  <!-- Animated header banner with sine wave -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>EQUIL — The coin that feels the market</h1>
+        <p class="sub">When Bitcoin dumps, we burn. When Bitcoin pumps, we mint — but slower.</p>
+        <div class="wallet-check">
+          <input id="walletInput" placeholder="Enter EVM wallet address (0x...)" />
+          <button id="checkBtn" class="btn primary">Check Rewards</button>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <canvas id="sineCanvas" width="600" height="200"></canvas>
+      </div>
+    </div>
+  </section>
+
+  <!-- Popup for rewards -->
+  <div id="rewardModal" class="modal hidden">
+    <div class="modal-card">
+      <button class="modal-close" id="modalClose">✕</button>
+      <h3>Your Airdrop Reward</h3>
+      <p id="rewardMsg">Checking...</p>
+      <div class="modal-actions">
+        <button id="joinTwitter" class="btn primary">Join via Twitter</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Airdrop tasks -->
+  <section id="airdrop" class="tasks">
+    <h2>Airdrop Tasks</h2>
+    <div class="task-grid">
+      <div class="task-card">
+        <h4>Follow on Twitter</h4>
+        <p>+100 EQL</p>
+        <button class="task-btn" data-task="follow">Start</button>
+      </div>
+      <div class="task-card">
+        <h4>Retweet pinned post</h4>
+        <p>+50 EQL</p>
+        <button class="task-btn" data-task="retweet">Start</button>
+      </div>
+      <div class="task-card">
+        <h4>Join Telegram</h4>
+        <p>+100 EQL</p>
+        <button class="task-btn" data-task="telegram">Start</button>
+      </div>
+      <div class="task-card">
+        <h4>Invite a friend (referral)</h4>
+        <p>+500 EQL per referral</p>
+        <button class="task-btn" data-task="referral">Get Ref Link</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- About / footer -->
+  <footer id="about" class="footer">
+    <div class="container">
+      <div>
+        <h3>About Equil</h3>
+        <p>Equil is a market-reactive token built on Monad: burns on BTC dumps, mints on BTC pumps (slower). Join our testnet airdrop.</p>
+      </div>
+      <div>
+        <h3>Connect</h3>
+        <p>Twitter • Telegram • Website</p>
+      </div>
+    </div>
+    <div class="tiny">© Equil — Built on Monad</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+      </html>
